@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Inscrições de Emprego</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Inscrições de Emprego</h1>
+        <form id="folder-form">
+            <div class="form-group">
+                <label for="folder-name">Nome do Site</label>
+                <input type="text" id="folder-name" required>
+            </div>
+            <button type="submit">Adicionar Site</button>
+        </form>
+        <div class="search-sort-filter">
+            <input type="text" id="search" placeholder="Pesquisar inscrições">
+            <select id="filter">
+                <option value="">Filtrar por</option>
+                <option value="date">Data</option>
+                <option value="position">Posição</option>
+            </select>
+            <select id="sort">
+                <option value="">Ordenar por</option>
+                <option value="date-asc">Data (asc)</option>
+                <option value="date-desc">Data (desc)</option>
+                <option value="position-asc">Posição (asc)</option>
+                <option value="position-desc">Posição (desc)</option>
+            </select>
+        </div>
+        <div id="folders"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

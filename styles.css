@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.search-sort-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.search-sort-filter input, .search-sort-filter select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+#folders {
+    margin-top: 20px;
+}
+
+.folder {
+    margin-bottom: 20px;
+}
+
+.folder h2 {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.folder form {
+    margin-top: 10px;
+}
+
+.folder form .form-group {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.folder form .form-group input {
+    width: 100%;
+}
+
+.folder ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.folder li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.folder li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.folder li button:hover {
+    background-color: #c82333;
+}
+
+@media (min-width: 768px) {
+    .folder form .form-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .folder form .form-group input {
+        width: calc(33.3% - 10px);
+    }
+}
